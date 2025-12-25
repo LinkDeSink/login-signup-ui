@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="create.css">
+        <title>Create new account</title>
+        <script src="create.js" defer></script>
+    </head>
+    <body>
+        <div class="create-box">
+            <form method="post" class="signup">
+            <label for="first-name">First Name:</label>
+            <input type="text" name="first-name" id="first-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" name="last-name" id="last-name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required autocomplete placeholder="example@gmail.com">
+
+            <label for="birthday">Birthday:</label>
+            <input type="date" name="birthday" id="birthday" required>
+
+            <label for="password">Create Password:</label>
+            <input type="password" id="password" name="password" required>
+  
+            <label for="confirm">Confirm Password:</label>
+            <input type="password" id="confirm" name="confirm" required>
+            <p class="pwdchecker"></p>
+
+            <input type="submit" value="create account" class="create-btn">
+
+
+            <p class="message"></p>
+
+            </form>
+        </div>
+        <script>
+            console.log('create.js loaded');
+        </script>
+    </body>
+</html>
